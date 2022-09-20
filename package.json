@@ -1,5 +1,5 @@
 {
-  "name": "social-media-api",
+  "name": "x-dating-api",
   "version": "1.2.0",
   "description": "x-Dating",
   "main": "./src/server.js",
