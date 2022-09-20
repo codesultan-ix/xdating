@@ -81,6 +81,9 @@ const connectToDatabase = function () {
           });
         });
 
+        app.get("/test", (_req, res) =>  {
+          res.status(200).send("Hello world")
+        })
         // Error Handler
         closeApp(app);
 
@@ -134,7 +137,9 @@ const connectToDatabase = function () {
         message: "Server is under maintenance",
       });
     });
-
+    app.get("/test", (_req, res) =>  {
+      res.status(200).send("Hello world")
+    })
     app.use("*", (req, res, next) => {
       res.status(503).json({
         success: false,
